@@ -31,6 +31,9 @@ class Human(var name:String, var age:Int, var weight:Double){
                 /*- birthday( ) :Increments the human’s age by 1 (2POINTS*/
     fun birthday(){
         age +=1
+                    /*Correction: age +=1 only increases it once. so You should use
+                    age ++. this increases age by one every year. Not just once
+                     */
                     println(age)
 
 
@@ -43,7 +46,5 @@ Create an instance of this human class and invoke all its functions*/
 phoneNumber, password. Create an instance of User and print out any 2
 attributes*/
 
-data class User(var firtName:String, var lastName:String, var email:String, var phoneNumber:String, var passWord:String,){
-
-
-}
+data class User(var firtName:String, var lastName:String, var email:String, var phoneNumber:String, var passWord:String,)
+/* dataclasses are just storage locations so dont need the curlly braces{}*/
